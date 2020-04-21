@@ -31,10 +31,15 @@
 </template>
 
 <script>
+import { useSomething } from './use';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String,
+  },
+  setup() {
+    useSomething();
   },
 };
 </script>
